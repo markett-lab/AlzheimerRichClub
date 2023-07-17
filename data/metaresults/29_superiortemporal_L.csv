@@ -1,0 +1,6 @@
+,terms,pReverse,signifcant<0.05,probReverse,Bayes
+0,['Neurosynth_TFIDF__alzheimer'],[0.9217933064368306],[False],[0.4921449339969365],[0.969065717647026]
+1,['Neurosynth_TFIDF__alzheimer disease'],[0.8615250554700506],[False],[0.4853876983328148],[0.9432104455340619]
+2,['Neurosynth_TFIDF__mild cognitive'],[0.9576437795866364],[False],[0.4934158760472318],[0.9740058022292777]
+3,['Neurosynth_TFIDF__mci'],[0.9713073386392008],[False],[0.494515001557255],[0.9782980762648043]
+4,['Neurosynth_TFIDF__cognitive impairment'],[0.8478332815381108],[False],[0.4825890526936207],[0.9326997335598716]
