@@ -5,7 +5,7 @@ load data/results_fig2.mat
 figure
 tiledlayout(3,2)
     nexttile
-        eb=errorbar([mean(atro_plot_max.healthy); mean(atro_plot_max.mci) ;mean(atro_plot_max.ad)]',[sem(atro_plot_max.healthy); sem(atro_plot_max.mci) ;sem(atro_plot_max.ad)]','LineWidth',2)
+        eb=errorbar([atmax(1,:,1); atmax(2,:,1) ;atmax(3,:,1)]',[atmax(1,:,2); atmax(2,:,2) ;atmax(3,:,2)]','LineWidth',2)
         xlim([.5 2.5]); xticks([1 2]); xticklabels({'periphery' 'rich club'}); ylabel('atrophy t1:t0'); ylim([0 300])
         eb(1).Marker='o';  
         eb(2).Marker='square'; eb(2).MarkerSize=10;
@@ -14,7 +14,7 @@ tiledlayout(3,2)
         box off
       title('>=k(max(\phi))')
     nexttile
-        eb=errorbar([mean(atro_plot_min.healthy); mean(atro_plot_min.mci) ;mean(atro_plot_min.ad)]',[sem(atro_plot_min.healthy); sem(atro_plot_min.mci) ;sem(atro_plot_min.ad)]','LineWidth',2)
+        eb=errorbar([atmin(1,:,1); atmin(2,:,1) ;atmin(3,:,1)]',[atmin(1,:,2); atmin(2,:,2) ;atmin(3,:,2)]','LineWidth',2)
         xlim([.5 2.5]); xticks([1 2]); xticklabels({'periphery' 'rich club'}); ylabel('atrophy t1:t0'); ylim([0 300])
         eb(1).Marker='o';  
         eb(2).Marker='square'; eb(2).MarkerSize=10;
@@ -23,7 +23,7 @@ tiledlayout(3,2)
         box off
        title('>=k(min)')
     nexttile
-        eb=errorbar([mean(amy_plot_max.healthy); mean(amy_plot_max.mci) ;mean(amy_plot_max.ad)]',[sem(amy_plot_max.healthy); sem(amy_plot_max.mci) ;sem(amy_plot_max.ad)]','LineWidth',2)
+        eb=errorbar([ammax(1,:,1); ammax(2,:,1) ;ammax(3,:,1)]',[ammax(1,:,2); ammax(2,:,2) ;ammax(3,:,2)]','LineWidth',2)
         xlim([.5 2.5]); xticks([1 2]); xticklabels({'periphery' 'rich club'}); ylabel('amyloid')
         eb(1).Marker='o';  
         eb(2).Marker='square'; eb(2).MarkerSize=10;
@@ -33,7 +33,7 @@ tiledlayout(3,2)
       %  legend({'healthy' 'mci' 'alzheimer'},'Location','northoutside','Orientation','horizontal')
 
     nexttile
-        eb=errorbar([mean(amy_plot_min.healthy); mean(amy_plot_min.mci) ;mean(amy_plot_min.ad)]',[sem(amy_plot_min.healthy); sem(amy_plot_min.mci) ;sem(amy_plot_min.ad)]','LineWidth',2);
+        eb=errorbar([ammin(1,:,1); ammin(2,:,1) ;ammin(3,:,1)]',[ammin(1,:,2); ammin(2,:,2) ;ammin(3,:,2)]','LineWidth',2);
         xlim([.5 2.5]); xticks([1 2]); xticklabels({'periphery' 'rich club'}); ylabel('amyloid')
         eb(1).Marker='o';  
         eb(2).Marker='square'; eb(2).MarkerSize=10;
