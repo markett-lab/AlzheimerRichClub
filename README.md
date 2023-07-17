@@ -13,7 +13,7 @@ The folder meta contains python code (markdown and notebook) to perform the meta
 Matlab scripts d,e process the results (as reported in the paper)
 Matlab script f plots rich club regions (Enigma toolbox required)
 Matlab script g reproduces Figure 2 from the paper.
-The summary data are in data (aggregated subject level data points as presented in the paper, without any identifier).
+The summary data are in data (aggregated group-level means and sems as presented in the paper, without any identifier).
 
 # Abstract
 Alzheimer's disease (AD) is characterized by significant cerebral dysfunction, including increased amyloid deposition, gray matter atrophy, and changes in brain function. The involvement of highly connected network hubs, known as the "rich club," in the pathology of the disease remains inconclusive despite previous research efforts. In this study, we aimed to systematically assess the link between the rich club and AD using a multimodal neuroimaging approach.
